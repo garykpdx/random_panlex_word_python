@@ -1,8 +1,7 @@
-from requests import post
+from requests import get, post
 
 PANLEX_ISO_639_LANGVARS = 7257
 DISPLAY_LANGUAGE = 'eng-000'
-
 
 def post_to_langvar(params=None):
     response = post('http://api.panlex.org/v2/langvar', params=params)
